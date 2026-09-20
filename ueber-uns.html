@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Über uns | FV Großer Stern</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="hero">
+  <nav class="nav container">
+    <a href="index.html" class="brand">FV Großer Stern</a>
+
+    <button class="menu-toggle" aria-label="Menü öffnen"
+      onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      ☰
+    </button>
+
+    <div class="nav-links">
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="index.html#projekte">Projekte</a>
+      <a href="termine.html">Termine</a>
+      <a href="index.html#mitglied">Mitglied werden</a>
+      <a href="index.html#spenden">Spenden</a>
+      <a href="index.html#kontakt">Kontakt</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<section class="section">
+  <div class="container two-col">
+
+    <div>
+      <p class="eyebrow">Über uns</p>
+      <h2>Von Anfang an gemeinsam etwas bewegen</h2>
+
+      <p>
+        Seit 2026 sind wir als eingetragener Förderverein für die
+        Evangelische Kita Großer Stern aktiv.
+      </p>
+
+      <p>
+        Unser Ziel ist es, den Kita-Alltag der Kinder zu bereichern
+        und dort zu unterstützen, wo zusätzliche Möglichkeiten
+        geschaffen werden können.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Was wir ermöglichen möchten</h3>
+
+      <ul class="checklist">
+        <li>Spiel- und Bewegungsmaterialien</li>
+<li>Bücher und pädagogische Materialien</li>
+<li>Kreativ- und Beschäftigungsmaterialien</li>
+<li>Projekte für das Außengelände</li>
+<li>Ausflüge und besondere Aktivitäten</li>
+<li>Feste und gemeinsame Erlebnisse</li>
+</ul>
+</div>
+
+</div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>Förderverein der Evangelischen Kita Großer Stern e.V.</p>
+    <p>
+      <a href="impressum.html">Impressum</a> ·
+      <a href="datenschutz.html">Datenschutz</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.remove('open');
+    });
+  });
+</script>
+
+</body>
+</html>
