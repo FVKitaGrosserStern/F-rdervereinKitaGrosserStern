@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mitglied werden | FV Großer Stern</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="hero">
+  <nav class="nav container">
+    <a href="index.html" class="brand">FV Großer Stern</a>
+
+    <button class="menu-toggle" aria-label="Menü öffnen"
+      onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      ☰
+    </button>
+
+    <div class="nav-links">
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="projekte.html">Projekte</a>
+      <a href="termine.html">Termine</a>
+      <a href="mitglied.html">Mitglied werden</a>
+      <a href="index.html#spenden">Spenden</a>
+      <a href="index.html#kontakt">Kontakt</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<section class="section">
+  <div class="container two-col">
+
+    <div>
+      <p class="eyebrow">Mitglied werden</p>
+      <h1>Schon ab 1 € im Monat</h1>
+
+      <p>
+        Mit deiner Mitgliedschaft unterstützt du unseren Förderverein
+        und damit die Kinder der Kita Großer Stern.
+      </p>
+
+      <div class="price-box">
+        <span class="price">12 €</span>
+        <span>Mindestens pro Jahr</span>
+      </div>
+
+      <p>
+        Du kannst deinen Jahresbeitrag selbstverständlich auch höher wählen.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>So wirst du Mitglied</h2>
+
+      <ol class="steps">
+        <li>Mitgliedsantrag herunterladen.</li>
+        <li>Antrag vollständig ausfüllen.</li>
+        <li>Digital per E-Mail oder ausgedruckt bei uns abgeben.</li>
+      </ol>
+
+      <div class="stack">
+        <a class="btn primary" href="mitgliedsantrag.pdf">
+          Mitgliedsantrag öffnen
+        </a>
+
+        <a class="btn secondary" href="mailto:FVKitaGrosserStern@gmx.de">
+          Antrag per E-Mail senden
+        </a>
+      </div>
+
+      <p class="small-note">
+        Den Antrag kannst du direkt als PDF herunterladen und ausfüllen.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>Förderverein der Evangelischen Kita Großer Stern e.V.</p>
+    <p>
+      <a href="impressum.html">Impressum</a> ·
+      <a href="datenschutz.html">Datenschutz</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.remove('open');
+    });
+  });
+</script>
+
+</body>
+</html>
