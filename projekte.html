@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projekte | FV Großer Stern</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="hero">
+  <nav class="nav container">
+    <a href="index.html" class="brand">FV Großer Stern</a>
+
+    <button class="menu-toggle" aria-label="Menü öffnen"
+      onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      ☰
+    </button>
+
+    <div class="nav-links">
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="projekte.html">Projekte</a>
+      <a href="termine.html">Termine</a>
+      <a href="index.html#mitglied">Mitglied werden</a>
+      <a href="index.html#spenden">Spenden</a>
+      <a href="index.html#kontakt">Kontakt</a>
+    </div>
+  </nav>
+</header>
+
+<main><section class="section alt">
+  <div class="container">
+
+    <p class="eyebrow">Unsere Projekte</p>
+    <h1>Wir stehen am Anfang – und haben viel vor</h1>
+
+    <p class="lead">
+      Als frisch gegründeter Förderverein möchten wir gemeinsam mit Familien,
+      Freunden und Unterstützern viele schöne Projekte für die Kinder
+      ermöglichen.
+    </p>
+
+    <div class="cards">
+
+      <article class="card">
+        <div class="icon">🛝</div>
+        <h3>Spielen &amp; Bewegen</h3>
+        <p>
+          Zusätzliche Spiel- und Bewegungsmaterialien für noch mehr Freude
+          und Bewegung im Kita-Alltag.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="icon">🎨</div>
+        <h3>Kreativität fördern</h3>
+        <p>
+          Materialien und Projekte, die Fantasie, Kreativität und gemeinsames
+          Gestalten unterstützen.
+        </p>
+      </article>    
+      <article class="card">
+        <div class="icon">🌳</div>
+        <h3>Außengelände</h3>
+        <p>
+          Projekte und Anschaffungen, die das Spielen und Entdecken draußen
+          noch schöner machen.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="icon">🎉</div>
+        <h3>Gemeinsame Erlebnisse</h3>
+        <p>
+          Ausflüge, Feste und besondere Aktionen, die den Kindern in Erinnerung
+          bleiben.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="container">
+    <p>Förderverein der Evangelischen Kita Großer Stern e.V.</p>
+    <p>
+      <a href="impressum.html">Impressum</a> ·
+      <a href="datenschutz.html">Datenschutz</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.remove('open');
+    });
+  });
+</script>
+
+</body>
+</html>
