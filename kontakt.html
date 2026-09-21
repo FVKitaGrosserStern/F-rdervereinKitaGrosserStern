@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt | FV Großer Stern</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="hero">
+  <nav class="nav container">
+    <a href="index.html" class="brand">FV Großer Stern</a>
+
+    <button class="menu-toggle" aria-label="Menü öffnen"
+      onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      ☰
+    </button>
+
+    <div class="nav-links">
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="projekte.html">Projekte</a>
+      <a href="termine.html">Termine</a>
+      <a href="mitglied.html">Mitglied werden</a>
+      <a href="spenden.html">Spenden</a>
+      <a href="kontakt.html">Kontakt</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<section class="section">
+  <div class="container contact-box">
+
+    <p class="eyebrow">Kontakt</p>
+    <h1>Wir freuen uns von dir zu hören</h1>
+
+    <p>
+      Du hast Fragen, eine Projektidee oder möchtest uns unterstützen?
+      Schreib uns gerne eine E-Mail.
+    </p>
+
+    <a class="mail-link" href="mailto:FVKitaGrosserStern@gmx.de">
+      FVKitaGrosserStern@gmx.de
+    </a>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>Förderverein der Evangelischen Kita Großer Stern e.V.</p>
+    <p>
+      <a href="impressum.html">Impressum</a> ·
+      <a href="datenschutz.html">Datenschutz</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.remove('open');
+    });
+  });
+</script>
+
+</body>
+</html>
