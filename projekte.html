@@ -3,8 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projekte | FV Großer Stern</title>
+  <title>Aktionen &amp; Projekte | FV Großer Stern</title>
+  <meta name="description" content="Aktionen und Projekte des Fördervereins der Evangelischen Kita Großer Stern e.V.">
   <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* Ergänzungen nur für diese Seite */
+    .aktion {
+      margin-top: 2rem;
+      padding: 1.5rem;
+      background: #fff;
+      border-radius: 18px;
+    }
+
+    .aktion-kopf {
+      margin-bottom: 1.5rem;
+    }
+
+    .aktion-kopf h2 {
+      margin-bottom: .5rem;
+    }
+
+    .aktion-meta {
+      font-weight: 600;
+      opacity: .75;
+      margin-bottom: 1rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 1.25rem;
+    }
+
+    .gallery a {
+      display: block;
+    }
+
+    .gallery img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border-radius: 12px;
+      display: block;
+      transition: transform .2s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.02);
+    }
+
+    .gallery-hinweis {
+      font-size: .9rem;
+      opacity: .7;
+      margin-top: .75rem;
+    }
+
+    .projekt-titel {
+      margin-top: 3.5rem;
+    }
+
+    @media (max-width: 700px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .aktion {
+        padding: 1.1rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -20,26 +89,109 @@
 
     <div class="nav-links">
       <a href="ueber-uns.html">Über uns</a>
-      <a href="projekte.html">Projekte</a>
+      <a href="projekte.html">Aktionen &amp; Projekte</a>
       <a href="termine.html">Termine</a>
       <a href="mitglied.html">Mitglied werden</a>
-<a href="spenden.html">Spenden</a>
-<a href="kontakt.html">Kontakt</a>
+      <a href="spenden.html">Spenden</a>
+      <a href="kontakt.html">Kontakt</a>
     </div>
   </nav>
 </header>
 
-<main><section class="section alt">
+<main>
+
+<section class="section alt">
   <div class="container">
 
-    <p class="eyebrow">Unsere Projekte</p>
-    <h1>Wir stehen am Anfang – und haben viel vor</h1>
+    <p class="eyebrow">Gemeinsam aktiv</p>
+    <h1>Aktionen &amp; Projekte</h1>
 
     <p class="lead">
-      Als frisch gegründeter Förderverein möchten wir gemeinsam mit Familien,
-      Freunden und Unterstützern viele schöne Projekte für die Kinder
-      ermöglichen.
+      Mit gemeinsamen Aktionen, Veranstaltungen und viel ehrenamtlichem
+      Engagement sammeln wir Mittel für unseren Förderverein.
+      Damit möchten wir besondere Projekte und Anschaffungen für die
+      Kinder unserer Kita ermöglichen.
     </p>
+
+
+    <!-- NUMMERNFLOHMARKT -->
+
+    <article class="aktion">
+
+      <div class="aktion-kopf">
+        <p class="eyebrow">Unsere Aktion</p>
+        <h2>🧸 Nummernflohmarkt</h2>
+
+        <p class="aktion-meta">
+          Gemeinsam stöbern und Gutes tun
+        </p>
+
+        <p>
+          Bei unserem Nummernflohmarkt konnten Familien Kinderkleidung,
+          Spielzeug und vieles mehr anbieten und entdecken.
+          Dank der Unterstützung vieler Helferinnen und Helfer sowie
+          zahlreicher Besucherinnen und Besucher konnten wir mit dieser
+          Aktion Geld für unseren Förderverein sammeln.
+        </p>
+
+        <p>
+          Der Erlös kommt den Kindern unserer Kita zugute und hilft uns
+          dabei, zusätzliche Projekte und Anschaffungen zu ermöglichen.
+        </p>
+      </div>
+
+
+      <!-- FOTOGALERIE -->
+
+      <h3>📷 Impressionen vom Nummernflohmarkt</h3>
+
+      <div class="gallery">
+
+        <a href="bilder/flohmarkt-1.jpg">
+          <img src="bilder/flohmarkt-1.jpg"
+               alt="Impression vom Nummernflohmarkt"
+               loading="lazy">
+        </a>
+
+        <a href="bilder/flohmarkt-2.jpg">
+          <img src="bilder/flohmarkt-2.jpg"
+               alt="Impression vom Nummernflohmarkt"
+               loading="lazy">
+        </a>
+
+        <a href="bilder/flohmarkt-3.jpg">
+          <img src="bilder/flohmarkt-3.jpg"
+               alt="Impression vom Nummernflohmarkt"
+               loading="lazy">
+        </a>
+
+        <a href="bilder/flohmarkt-4.jpg">
+          <img src="bilder/flohmarkt-4.jpg"
+               alt="Impression vom Nummernflohmarkt"
+               loading="lazy">
+        </a>
+
+      </div>
+
+      <p class="gallery-hinweis">
+        Zum Vergrößern einfach ein Bild antippen.
+      </p>
+
+    </article>
+
+
+    <!-- ZUKÜNFTIGE PROJEKTE -->
+
+    <div class="projekt-titel">
+      <p class="eyebrow">Was wir ermöglichen möchten</p>
+      <h2>Unsere Projekte</h2>
+
+      <p>
+        Mit den Einnahmen aus unseren Aktionen und mit Spenden möchten
+        wir zusätzliche Angebote und Anschaffungen für die Kinder
+        unterstützen.
+      </p>
+    </div>
 
     <div class="cards">
 
@@ -47,8 +199,8 @@
         <div class="icon">🛝</div>
         <h3>Spielen &amp; Bewegen</h3>
         <p>
-          Zusätzliche Spiel- und Bewegungsmaterialien für noch mehr Freude
-          und Bewegung im Kita-Alltag.
+          Zusätzliche Spiel- und Bewegungsmaterialien für noch mehr
+          Freude und Bewegung im Kita-Alltag.
         </p>
       </article>
 
@@ -56,16 +208,17 @@
         <div class="icon">🎨</div>
         <h3>Kreativität fördern</h3>
         <p>
-          Materialien und Projekte, die Fantasie, Kreativität und gemeinsames
-          Gestalten unterstützen.
+          Materialien und Projekte, die Fantasie, Kreativität und
+          gemeinsames Gestalten unterstützen.
         </p>
-      </article>    
+      </article>
+
       <article class="card">
         <div class="icon">🌳</div>
         <h3>Außengelände</h3>
         <p>
-          Projekte und Anschaffungen, die das Spielen und Entdecken draußen
-          noch schöner machen.
+          Projekte und Anschaffungen, die das Spielen und Entdecken
+          draußen noch schöner machen.
         </p>
       </article>
 
@@ -73,16 +226,19 @@
         <div class="icon">🎉</div>
         <h3>Gemeinsame Erlebnisse</h3>
         <p>
-          Ausflüge, Feste und besondere Aktionen, die den Kindern in Erinnerung
-          bleiben.
+          Ausflüge, Feste und besondere Aktionen, die den Kindern
+          in Erinnerung bleiben.
         </p>
       </article>
 
     </div>
+
   </div>
 </section>
 
 </main>
+
+
 <footer class="footer">
   <div class="container">
     <p>Förderverein der Evangelischen Kita Großer Stern e.V.</p>
@@ -92,6 +248,7 @@
     </p>
   </div>
 </footer>
+
 
 <script>
   document.querySelectorAll('.nav-links a').forEach(link => {
